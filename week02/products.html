@@ -107,7 +107,6 @@
           axios.defaults.headers.common['Authorization'] = token
           axios.post(`${url}/api/user/check`)
             .then(res => {
-              console.log(res.data)
               this.getProducts()
             }).catch(err => {
               window.location.href = 'login.html'
